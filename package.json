@@ -1,140 +1,48 @@
 {
-  "_from": "sqlite3@^3.1.13",
-  "_id": "sqlite3@3.1.13",
+  "_from": "amdefine@>=0.0.4",
+  "_id": "amdefine@1.0.1",
   "_inBundle": false,
-  "_integrity": "sha512-JxXKPJnkZ6NuHRojq+g2WXWBt3M1G9sjZaYiHEWSTGijDM3cwju/0T2XbWqMXFmPqDgw+iB7zKQvnns4bvzXlw==",
-  "_location": "/sqlite3",
+  "_integrity": "sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=",
+  "_location": "/amdefine",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "sqlite3@^3.1.13",
-    "name": "sqlite3",
-    "escapedName": "sqlite3",
-    "rawSpec": "^3.1.13",
+    "raw": "amdefine@>=0.0.4",
+    "name": "amdefine",
+    "escapedName": "amdefine",
+    "rawSpec": ">=0.0.4",
     "saveSpec": null,
-    "fetchSpec": "^3.1.13"
+    "fetchSpec": ">=0.0.4"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "/source-map"
   ],
-  "_resolved": "https://registry.npmjs.org/sqlite3/-/sqlite3-3.1.13.tgz",
-  "_shasum": "d990a05627392768de6278bafd1a31fdfe907dd9",
-  "_spec": "sqlite3@^3.1.13",
-  "_where": "C:\\Users\\ksgha\\WebstormProjects\\sindhu",
+  "_resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.1.tgz",
+  "_shasum": "4a5282ac164729e93619bcfd3ad151f817ce91f5",
+  "_spec": "amdefine@>=0.0.4",
+  "_where": "C:\\Users\\ksgha\\WebstormProjects\\sindhu\\node_modules\\source-map",
   "author": {
-    "name": "MapBox",
-    "url": "https://mapbox.com/"
-  },
-  "binary": {
-    "module_name": "node_sqlite3",
-    "module_path": "./lib/binding/{node_abi}-{platform}-{arch}",
-    "host": "https://mapbox-node-binary.s3.amazonaws.com",
-    "remote_path": "./{name}/v{version}/{toolset}/",
-    "package_name": "{node_abi}-{platform}-{arch}.tar.gz"
+    "name": "James Burke",
+    "email": "jrburke@gmail.com",
+    "url": "http://github.com/jrburke"
   },
   "bugs": {
-    "url": "https://github.com/mapbox/node-sqlite3/issues"
+    "url": "https://github.com/jrburke/amdefine/issues"
   },
-  "bundleDependencies": [
-    "node-pre-gyp"
-  ],
-  "contributors": [
-    {
-      "name": "Konstantin Käfer",
-      "email": "mail@kkaefer.com"
-    },
-    {
-      "name": "Dane Springmeyer",
-      "email": "dane@mapbox.com"
-    },
-    {
-      "name": "Will White",
-      "email": "will@mapbox.com"
-    },
-    {
-      "name": "Orlando Vazquez",
-      "email": "ovazquez@gmail.com"
-    },
-    {
-      "name": "Artem Kustikov",
-      "email": "kustikoff@gmail.com"
-    },
-    {
-      "name": "Eric Fredricksen",
-      "email": "efredricksen@gmail.com"
-    },
-    {
-      "name": "John Wright",
-      "email": "mrjjwright@gmail.com"
-    },
-    {
-      "name": "Ryan Dahl",
-      "email": "ry@tinyclouds.org"
-    },
-    {
-      "name": "Tom MacWright",
-      "email": "tom@mapbox.com"
-    },
-    {
-      "name": "Carter Thaxton",
-      "email": "carter.thaxton@gmail.com"
-    },
-    {
-      "name": "Audrius Kažukauskas",
-      "email": "audrius@neutrino.lt"
-    },
-    {
-      "name": "Johannes Schauer",
-      "email": "josch@pyneo.org"
-    },
-    {
-      "name": "Nathan Rajlich",
-      "email": "nathan@tootallnate.net"
-    },
-    {
-      "name": "AJ ONeal",
-      "email": "coolaj86@gmail.com"
-    },
-    {
-      "name": "Mithgol"
-    },
-    {
-      "name": "Ben Noordhuis",
-      "email": "ben@strongloop.com"
-    }
-  ],
-  "dependencies": {
-    "nan": "~2.7.0",
-    "node-pre-gyp": "~0.6.38"
-  },
+  "bundleDependencies": false,
   "deprecated": false,
-  "description": "Asynchronous, non-blocking SQLite3 bindings",
-  "devDependencies": {
-    "aws-sdk": "2.x",
-    "eslint": "3.5.0",
-    "mocha": "3.x"
+  "description": "Provide AMD's define() API for declaring modules in the AMD format",
+  "engines": {
+    "node": ">=0.4.2"
   },
-  "homepage": "http://github.com/mapbox/node-sqlite3",
-  "keywords": [
-    "sql",
-    "sqlite",
-    "sqlite3",
-    "database"
-  ],
-  "license": "BSD-3-Clause",
-  "main": "./lib/sqlite3",
-  "name": "sqlite3",
+  "homepage": "http://github.com/jrburke/amdefine",
+  "license": "BSD-3-Clause OR MIT",
+  "main": "./amdefine.js",
+  "name": "amdefine",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mapbox/node-sqlite3.git"
+    "url": "git+https://github.com/jrburke/amdefine.git"
   },
-  "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build",
-    "prepublishOnly": "npm ls",
-    "pretest": "node test/support/createdb.js",
-    "test": "mocha -R spec --timeout 480000"
-  },
-  "version": "3.1.13"
+  "version": "1.0.1"
 }
